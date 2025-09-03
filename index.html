@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shashank Vyas | Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <style>
+    body { font-family: Arial, sans-serif; background: #f8f9fa; margin: 0; padding: 0; }
+    
+    /* Hero section with background */
+    header {
+      background: url("assets/bg-ai.jpg") no-repeat center center/cover;
+      color: white;
+      text-align: center;
+      padding: 80px 20px;
+      position: relative;
+    }
+
+    /* Solid black intro box shifted right */
+    .intro-box {
+      background: rgba(0, 0, 0, 1); /* solid black */
+      display: inline-block;
+      padding: 30px 40px;
+      border-radius: 12px;
+      max-width: 700px;
+      margin: auto;
+      margin-left: 120px; /* shifted a bit more right */
+    }
+
+    header img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      border: 3px solid white;
+      margin-bottom: 15px;
+    }
+
+    .intro-box h1 { font-size: 2.5rem; margin-bottom: 10px; }
+    .intro-box p { font-size: 1.2rem; margin-bottom: 20px; }
+
+    .social-icons a {
+      color: white;
+      margin: 0 12px;
+      font-size: 1.8rem;
+      transition: color 0.3s;
+    }
+    .social-icons a:hover { color: #0dcaf0; }
+
+    section { padding: 60px 0; }
+    .project-card img { width: 100%; height: 200px; object-fit: cover; border-radius: 8px; }
+  </style>
+</head>
+<body>
+
+<!-- Header / Hero Section -->
+<header>
+  <div class="intro-box">
+    <img src="assets/shashank.jpg" alt="Profile Photo">
+    <h1>Shashank Vyas</h1>
+    <p>AI/ML Engineer | Python Developer | Data Science</p>
+    <div class="social-icons">
+      <a href="https://github.com/ShashankVyas11"><i class="bi bi-github"></i></a>
+      <a href="https://linkedin.com/in/shashank-vyas11"><i class="bi bi-linkedin"></i></a>
+      <a href="https://www.codechef.com/users/shashank1vyasr"><i class="bi bi-code-slash"></i></a>
+      <a href="https://leetcode.com/u/shashank1vyasram/"><i class="bi bi-lightning"></i></a>
+    </div>
+  </div>
+</header>
+
+<!-- About Me -->
+<section class="container">
+  <h2>About Me</h2>
+  <p>
+    I am Shashank Vyas, a Computer Science Engineer (AI & ML specialization) from VIT Bhopal, 
+    Currently an AI/ML Engineer at Arcap REIT AI Solutions, I specialize in building intelligent systems, scalable backend applications, and deploying AI/ML models into production. 
+    With 100+ projects on GitHub and hands-on experience in Generative AI, RAG, and full-stack web apps, I enjoy solving real-world problems using AI and backend engineering.
+  </p>
+</section>
+
+<!-- Projects -->
+<section class="container">
+  <h2>Featured Projects</h2>
+  <div class="row">
+    <div class="col-md-6 my-3">
+      <div class="card project-card shadow">
+        <img src="assets/job-portal.jpg" alt="Job Portal">
+        <div class="card-body">
+          <h5>Job Portal</h5>
+          <p>A full-stack job portal that supports Job Seekers, Employers, and Admins with secure role-based login. It includes features like job search, resume uploads, application tracking, and real-time job listings using the Adzuna API.</p>
+          <a href="https://job-portal-web-e2c0.onrender.com" class="btn btn-primary btn-sm">Live Demo</a>
+          <a href="https://github.com/ShashankVyas11/Job-Portal-Web" class="btn btn-dark btn-sm">GitHub</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6 my-3">
+      <div class="card project-card shadow">
+        <img src="assets/chatbot.jpg" alt="AI ChatBot">
+        <div class="card-body">
+          <h5>AI ChatBot</h5>
+          <p>A multi-user chatbot that processes natural language queries, generates images with Stable Diffusion, and captions uploaded images using BLIP. Built with Flask + SQLite, it features role-based access, session storage, and works fully offline with local LLaMA 3 models.</p>
+          <a href="https://github.com/ShashankVyas11/Shashank-ChatBOT" class="btn btn-dark btn-sm">GitHub</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6 my-3">
+      <div class="card project-card shadow">
+        <img src="assets/ml-assistant.jpg" alt="ML Data Assistant">
+        <div class="card-body">
+          <h5>ML Data Assistant</h5>
+          <p>An AI-powered assistant designed to automate dataset cleaning, preprocessing, and ML predictions. It handles missing values, outliers, and generates before/after visual reports, delivering accurate time-series and regression forecasts with models like XGBoost and Prophet.</p>
+          <a href="https://github.com/ShashankVyas11/ML-Data-Assistance" class="btn btn-dark btn-sm">GitHub</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6 my-3">
+      <div class="card project-card shadow">
+        <img src="assets/drowsiness.jpg" alt="Driver Drowsiness Detection">
+        <div class="card-body">
+          <h5>Driver Drowsiness Detection</h5>
+          <p>A real-time computer vision system that monitors driver alertness using eye-blink detection and head-position tracking. When signs of fatigue are detected, it triggers instant alerts, making it a practical safety solution for transportation industries.</p>
+          <a href="https://github.com/ShashankVyas11/Driver-Drowsiness" class="btn btn-dark btn-sm">GitHub</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Skills -->
+<section class="container">
+  <h2>Skills</h2>
+  <ul>
+    <li><b>Languages:</b> Python, SQL, C++</li>
+    <li><b>AI/ML:</b> TensorFlow, PyTorch, Scikit-learn, Spark MLlib, OpenCV</li>
+    <li><b>Backend:</b> Flask, SQLite, Jinja2, Bootstrap</li>
+    <li><b>Data Tools:</b> Pandas, NumPy, Power BI</li>
+    <li><b>DevOps:</b> Docker, Git, Jenkins</li>
+  </ul>
+</section>
+
+<!-- Certifications -->
+<section class="container">
+  <h2>Certifications</h2>
+  <ul>
+    <li>Machine Learning, Data Science and Generative AI with Python – Udemy</li>
+    <li>AI Dashboards using Microsoft Power BI – Skill Nation</li>
+    <li>The Complete Python Pro Bootcamp – Udemy</li>
+    <li>Google Crash Course on Python – Coursera</li>
+    <li>Applied Machine Learning in Python – Coursera</li>
+    <li>Google Cloud Computing Foundation Program – Google Cloud</li>
+  </ul>
+</section>
+
+<!-- Contact -->
+<section class="container text-center">
+  <h2>Contact</h2>
+  <p>Email: <a href="mailto:shashank1vyasram@gmail.com">shashank1vyasram@gmail.com</a></p>
+  <p>Phone: <a href="tel:+91-9876543210">+91 98765 43210</a></p>
+</section>
+
+</body>
+</html>
